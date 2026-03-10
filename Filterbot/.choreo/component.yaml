@@ -1,0 +1,16 @@
+apiVersion: core/v1beta1
+kind: Component
+metadata:
+  name: filter-bot
+spec:
+  type: service
+  build:
+    pack: docker
+    docker:
+      dockerfilePath: Dockerfile
+      buildContext: .
+  endpoints:
+    - name: health
+      port: 8000
+      type: http
+      networkVisibility: public
