@@ -1,7 +1,7 @@
 apiVersion: core/v1beta1
 kind: Component
 metadata:
-  name: filter-bot
+  name: filterbot
 spec:
   type: service
   build:
